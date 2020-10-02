@@ -7,19 +7,26 @@ type Enclosure struct {
 }
 
 type Item struct {
-	Title     string    `xml:"title"`
-	Link      string    `xml:"link"`
-	Desc      string    `xml:"description"`
-	Guid      string    `xml:"guid"`
-	Enclosure Enclosure `xml:"enclosure"`
-	PubDate   string    `xml:"pubDate"`
+	Title       string    `xml:"title"`
+	Link        string    `xml:"link"`
+	Description string    `xml:"description"`
+	Guid        string    `xml:"guid"`
+	Enclosure   Enclosure `xml:"enclosure"`
+	PubDate     string    `xml:"pubDate"`
 }
 
 type Channel struct {
-	Title string `xml:"title"`
-	Link  string `xml:"link"`
-	Desc  string `xml:"description"`
-	Items []Item `xml:"item"`
+	Title          string `xml:"title"`
+	Link           string `xml:"link"`
+	Description    string `xml:"description"`
+	Language       string `xml:"language"`
+	Copyright      string `xml:"copyright"`
+	ManagingEditor string `xml:"managingEditor"`
+	WebMaster      string `xml:"webMaster"`
+	TTL            int    `xml:"ttl"`
+	PubDate        string `xml:"pubDate"`
+	Generator      string `xml:"generator"`
+	Items          []Item `xml:"item"`
 }
 
 type Rss struct {
