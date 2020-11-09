@@ -4,7 +4,7 @@ import (
 	"encoding/xml"
 	"net/http"
 
-	rss2_0 "github.com/Leapforce-nl/go_rss/2.0"
+	rss2_0 "github.com/leapforce-libraries/go_rss/2.0"
 )
 
 // ReadRss2_0 reads rss2.0 feed

@@ -1,3 +1,3 @@
-module github.com/Leapforce-nl/go_rss
+module github.com/leapforce-libraries/go_rss
 
 go 1.13
