@@ -12,12 +12,15 @@ import (
 }*/
 
 type Entry struct {
-	Title string `xml:"title"`
-	/*Link        string    `xml:"link"`
-	Description string    `xml:"description"`
-	Guid        string    `xml:"guid"`
+	Title     string `xml:"title"`
+	Link      string `xml:"link"`
+	Published string `xml:"published"`
+	Content   string `xml:"content"`
+
+	/*Guid        string    `xml:"guid"`
 	Enclosure   Enclosure `xml:"enclosure"`
 	PubDate     string    `xml:"pubDate"`*/
+
 }
 
 type Atom struct {
