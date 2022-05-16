@@ -12,8 +12,10 @@ import (
 }*/
 
 type Entry struct {
-	Title     string `xml:"title"`
-	Link      string `xml:"link"`
+	Title string `xml:"title"`
+	Link  struct {
+		Href string `xml:"href,attr"`
+	} `xml:"link"`
 	Published string `xml:"published"`
 	Content   string `xml:"content"`
 
