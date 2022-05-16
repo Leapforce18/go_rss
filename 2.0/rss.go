@@ -23,7 +23,7 @@ type Channel struct {
 	Copyright      string `xml:"copyright"`
 	ManagingEditor string `xml:"managingEditor"`
 	WebMaster      string `xml:"webMaster"`
-	TTL            int    `xml:"ttl"`
+	Ttl            int    `xml:"ttl"`
 	PubDate        string `xml:"pubDate"`
 	Generator      string `xml:"generator"`
 	Items          []Item `xml:"item"`
