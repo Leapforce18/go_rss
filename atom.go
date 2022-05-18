@@ -26,7 +26,8 @@ type Entry struct {
 }
 
 type Atom struct {
-	Title string `xml:"title"`
+	Title   string `xml:"title"`
+	Updated string `xml:"updated"`
 	/*Link           string `xml:"link"`
 	Description    string `xml:"description"`
 	Language       string `xml:"language"`
